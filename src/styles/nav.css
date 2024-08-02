@@ -1,0 +1,156 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Cormorant+Garamond:wght@300&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+:root{
+    --maincolor: darkslategray; 
+    --texcolor: aliceblue;
+    --secondarycolor: cornsilk;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 6rem;
+    padding: 0 2rem;
+    background: var(--maincolor);
+    z-index: 100;
+}
+
+.navbar {
+    background-color: var(--maincolor);
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a{
+    margin-left: 1rem;
+    color: var(--texcolor);
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+    
+    background: var(--maincolor);
+}
+
+nav a:hover{
+    color: var(--secondarycolor);
+    background-color: var(--maincolor);
+}
+
+.logo {
+    font-family: Cinzel;
+    color: var(--texcolor);
+    background-color: var(--maincolor);
+    font-size: 1.5rem;
+}
+
+header .nav-btn {
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    color: var(--texcolor);
+    visibility: hidden;
+    opacity: 0;
+}
+ */
+
+ .navbar-brand {
+    padding-top: var(--bs-navbar-brand-padding-y);
+    padding-bottom: var(--bs-navbar-brand-padding-y);
+    margin-right: var(--bs-navbar-brand-margin-end);
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:aliceblue;
+    text-decoration: none;
+    white-space: nowrap;
+    font-family: cinzel;
+}
+
+.nav-link {
+    display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: var(--bs-nav-link-font-weight);
+    color:var(--second-txt-clr);
+    text-decoration: none;
+    background: none;
+    border: 0;
+    font-family: Cormorant Garamond ;
+}
+
+.bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color: var(--text-clr) !important;
+}
+
+nav.bg-body-tertiary.navbar.navbar-expand-lg.navbar-light {
+    height: 4.8rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color:cornsilk;
+}
+
+.navbar-nav {
+    --bs-nav-link-padding-x: 0;
+    --bs-nav-link-padding-y: 0.5rem;
+    --bs-nav-link-font-weight: ;
+    --bs-nav-link-color: var(--bs-navbar-color);
+    --bs-nav-link-hover-color: cornsilk;
+    --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.navbar-toggler {
+    padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+    font-size: var(--bs-navbar-toggler-font-size);
+    line-height: 1;
+    color:var(--second-txt-clr);
+    background-color: transparent;
+    border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+    border-radius: var(--bs-navbar-toggler-border-radius);
+    transition: var(--bs-navbar-toggler-transition);
+}
+
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-image: var(--bs-navbar-toggler-icon-bg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    color: var(--second-txt-clr);
+}
+
+.caption {
+    font-family:serif;
+    font-size: 1.3rem;
+    font-weight: 100;
+}
+
+.navbar-brand:hover {
+    color: var(--second-txt-clr);
+}
+
+.caption:hover {
+    color: var(--second-txt-clr);
+}

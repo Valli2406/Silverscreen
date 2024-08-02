@@ -1,0 +1,117 @@
+.movie-card {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    border: 2px solid var(--border-clr);
+    background-color: var(--bg-clr);
+    width: auto;
+    min-width: 30rem;
+    border-radius: 1rem; 
+    margin-left: 25%;
+    margin-right: 20%;
+    margin-top: 12%;
+    margin-bottom: 10%;
+    padding: 1rem;
+}
+
+.single-title{
+    font-family: cinzel;
+    color: var(--text-clr);
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.card-text{
+    font-family: Cormorant Garamond;
+    font-weight: bold;
+    color: var(--text-clr);
+}
+
+.back-btn {
+    border: 2px solid var(--text-clr);
+    border-radius: .5rem;
+    padding: 0.5rem 1rem;
+    color: var(--text-clr);
+    color: var(--text-clr);
+    font-family: Cormorant Garamond;
+    font-weight: bold;
+    transition: 0.5s ease;
+}
+
+.back-btn:hover{
+    background-color: var(--text-clr);
+    color:var(--second-txt-clr);
+    box-shadow: 0 0 1rem var(--bg-clr);
+}
+ 
+/* .loading {
+    background: var(--text-clr);
+    color: var(--second-txt-clr);
+    font-family: cinzel;
+    font-weight: bold;
+    font-size: 3rem;
+    width: 100%;
+    height: 100vw;
+    align-self: center;
+    text-align: center;
+    padding-top: 10%;
+}
+
+.load  {
+    background-color: var(--text-clr);
+} */
+
+
+.load-body { 
+    padding-top: 25%; 
+    padding-bottom: 25%;
+    
+    background-color: var(--text-clr);
+    color: var(--second-txt-clr);
+    text-align:center;
+}
+
+#loading {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgba(255,255,255,.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s ease-in-out infinite;
+    -webkit-animation: spin 1s ease-in-out infinite;
+  }
+  
+  @keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+  }
+  @-webkit-keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+  }
+
+
+@media(max-width:450px)
+{
+    .movie-card{
+        margin-top: 16%;
+    }
+    
+}
+
+
+
+@media(max-width:400px)
+{
+    .movie-card {
+       margin-left: 17%;
+       margin-right: 20%;
+    }
+}
+
+@media(max-width:350px)
+{
+    .movie-card {
+       margin-left: 12%;
+       margin-right: 20%;
+    }
+}

@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Cormorant+Garamond:wght@300&display=swap');
+
+:root {
+    --text-clr: #4a5c6c;
+    /* --text-clr:  #706e6e; */
+    --bg-clr: azure;
+    /* --bg-clr: #E0ffff; */
+    --border-clr: rgb(156, 176, 193);
+    --second-txt-clr:aliceblue;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    font-family: Cinzel ;
+    font-weight:bold;
+    font-size: 1rem;
+    color: var(--text-clr);
+    text-align: center;
+    padding-top: 0.5rem;
+}
+  
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+    column-gap: 2rem;
+    background-color: var(--bg-clr);
+    border: 3px solid var(--border-clr) ;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 4.5rem;
+}
+
+/* .grid-4-col{
+    grid-template-columns: repeat(4,1fr);
+} */
+
+img{
+  border-radius: 1.5rem;
+  padding:1rem;
+  max-width: 15rem;
+  height: 20rem;
+}
+
+.card {
+    border-radius: 1rem;
+    width: 16rem;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    height: 25rem;
+
+}
+
+.card-info {
+    justify-content: center;
+}
+
+a:hover .card {
+    background-color: var(--text-clr);
+    color:aliceblue
+  }
+  
+a:hover h2 {
+    color: aliceblue;
+    transform: translateX(-.5rem);
+    /* transform: translate3d(1.5rem); */
+    /* font-size: 1.2rem; */
+    /* display: inline-block; */
+  }
+
+a:hover img {
+    transform: scale(1.05);
+  }
+
+.load-mv {
+    color: var(--text-clr);
+    font-family: cinzel;
+    font-weight: bold;
+    font-size: 2rem;
+    width: 100%;
+    height: 100vw;
+    align-self: center;
+    text-align: center;
+    padding-top: 10%;
+}
+
